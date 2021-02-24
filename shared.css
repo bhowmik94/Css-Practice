@@ -8,10 +8,12 @@ body {
 }
 
 .main-header {
-    background: #2ddf5c;
-    padding: 8px 16px;
     width: 100%;
     position: fixed;
+    top: 0;
+    left: 0;
+    background: #2ddf5c;
+    padding: 8px 16px;
     z-index: 1;
 }
 
@@ -25,8 +27,13 @@ body {
     text-decoration: none;
     font-weight: bold;
     font-size: 22px;
+    display: inline-block;
+    height: 24px;
 }
 
+.main-header__brand img {
+    height: 100%;
+}
 
 .main-nav {
     display: inline-block;
@@ -45,18 +52,18 @@ body {
     display: inline-block;
     margin: 0 16px;
 }
+
 .main-nav__item a {
-    color: #0e4f1f;
     text-decoration: none;
+    color: #0e4f1f;
     font-weight: bold;
     padding: 3px 0;
 }
 
 .main-nav__item a:hover,
-.main-nav__item a:active 
-{
-    color: #fff;
-    border-bottom: 5px white solid;
+.main-nav__item a:active {
+    color: white;
+    border-bottom: 5px solid white;
 }
 
 .main-nav__item--cta a {
@@ -72,7 +79,6 @@ body {
     background: white;
     border: none;
 }
-
 
 .main-footer {
     background: black;
@@ -113,9 +119,10 @@ body {
     cursor: pointer;
 }
 
-.button:hover, .button:active {
-    color: #0e4f1f;
+.button:hover,
+.button:active {
     background: white;
+    color: #0e4f1f;
 }
 
 .button:focus {
